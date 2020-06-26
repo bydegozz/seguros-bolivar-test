@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  max-width: 1110px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border: 1px solid #f9f9f9;
+  border-radius: 20px;
+  padding: 2rem 2rem 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container .row1 {
+  width: 30%;
+  padding: 1rem 1rem 0;
+  text-align: center;
+}
+.container .row1 h2 {
+  font-size: 18px;
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.container .row1 p {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 7px;
+}
+
+.container .row2 {
+  width: 70%;
+  padding: 1rem 1rem 0;
+  text-align: left;
+}
+.container .row2 h2 {
+  font-size: 18px;
+  color: black;
+  margin: 0 0 15px;
+}
+.container .row2 p {
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.container .row2 ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 3rem;
+}
+.container .row2 ul li {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.tags {
+  background-color: #c4c4c4;
+  color: #000;
+  padding: 0.7rem;
+  border-radius: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+.footer span {
+  font-weight: bold;
+  color: blue;
+}
+.footer button {
+  cursor: pointer;
+  background-color: blue;
+  color: #ffffff;
+  padding: 0.7rem;
+  border: 0;
+  border-radius: 5rem;
+}
+.footer p {
+  margin: 0;
+}
+.mobilex {
+  display: none;
+}
+
+@media (max-width: 690px) {
+  .App {
+    width: 90%;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .row2 ul {
+    flex-direction: column;
+  }
+  .container .row1,
+  .container .row2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 290px) {
+  .mobile,
+  ul,
+  li,
+  .desktop {
+    display: none;
+  }
+  .container .row2 p {
+    font-size: 12px;
+  }
+  .App {
+    padding: 0 0 0;
+  }
+  .mobilex {
+    display: inherit;
+    margin: 0 !important;
+  }
+}
